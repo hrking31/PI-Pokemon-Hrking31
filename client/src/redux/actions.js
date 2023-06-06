@@ -28,7 +28,7 @@ export const getPokemons = () => {
 export const getPokemon = (name) => {
   return async function (dispatch) {
     const apiData = await axios.get(
-      `http://localhost:3001/pokemons?name=${name}`
+      `http://192.168.1.18:3001/pokemons?name=${name}`
     );
     const pokemon = apiData.data;
     dispatch({ type: GET_POKEMON, payload: pokemon });
@@ -38,7 +38,7 @@ export const getPokemon = (name) => {
 
 export const getPokemonById = (id) => {
   return async function (dispatch) {
-    const apiData = await axios.get(`http://localhost:3001/pokemons/${id}`);
+    const apiData = await axios.get(`http://192.168.1.18:3001/pokemons/${id}`);
     const pokemon = apiData.data;
     dispatch({ type: GET_POKEMON_DETAIL, payload: pokemon });
     dispatch({ type: SET_LOADING });
@@ -56,7 +56,7 @@ export const getTypes = () => {
 export const postPokemon = (pokemonData) => {
   return async (dispatch) => {
     const apiData = await axios.post(
-      "http://localhost:3001/pokemons",
+      "http://192.168.1.18:3001/pokemons",
       pokemonData
     );
     const pokemon = apiData.data;
