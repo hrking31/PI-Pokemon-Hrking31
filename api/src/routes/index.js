@@ -6,7 +6,7 @@ const pokemonsRouter = require("./pokemonsRouter");
 const typesRouter = require("./typesRouter");
 
 const router = Router();
-app.use(
+router.use(
   cors({
     origin: "http://192.168.1.18:3000",
   })
