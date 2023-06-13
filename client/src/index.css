@@ -26,9 +26,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* background: url(../src/assets/VideogamesBackground1.jpg) no-repeat center
-    center fixed; */
-  /* background-color: #0f28b39d; */
   background: linear-gradient(to right, #070707bd, #a4a6a7);
   -webkit-background-size: cover;
   -moz-background-size: cover;
