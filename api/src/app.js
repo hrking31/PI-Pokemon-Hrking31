@@ -17,7 +17,8 @@ server.use(morgan("dev"));
 server.use((req, res, next) => {
   res.header(
     "Access-Control-Allow-Origin",
-    "http://192.168.1.18:3000, http://192.168.1.18:3001"
+    "http://192.168.1.18:3000"
+    // "http://192.168.1.18:3000, http://192.168.1.18:3001"
   ); // update to match the domain you will make the request from
   res.header("Access-Control-Allow-Credentials", "true");
   res.header(
