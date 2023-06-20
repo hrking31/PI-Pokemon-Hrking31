@@ -8,7 +8,7 @@ const typesRouter = require("./typesRouter");
 const router = Router();
 router.use(
   cors({
-    origin: "http://192.168.1.18",
+    origin: "http://192.168.1.18:3000",
   })
 );
 
